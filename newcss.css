@@ -133,6 +133,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  margin-top: -160px;
 }
 .section {
   padding: 2rem 0 4rem;
@@ -289,10 +290,9 @@ img {
   /* fill: hsl(69, 69%, 61%); */
 }
 .home__blob-img {
-  
-  width: 179%;
-  height: 127%;
-  /* padding-left: 30px; */
+  width: 180%;
+  height: 145%;
+  padding-left: 30px;
 }
 .home__data {
   grid-column: 1/3;
@@ -300,18 +300,15 @@ img {
 
 .home__title {
   font-size: var(--big-font-size);
-  margin-left: -100px;
 }
 .home__subtitle {
   font-size: var(--h3-font-size);
   color: var(--text-color);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-75);
-  margin-left: -100px;
 }
 .home__description {
   margin-bottom: var(--mb-2);
-  margin-left: -100px;
 }
 
 .portfolio__scroll {
@@ -351,7 +348,6 @@ img {
   color: #fff;
   padding: 1rem;
   margin-bottom: 10px;
-  margin-left: -98px;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
 }
@@ -395,12 +391,11 @@ img {
 
 /*===================== About ==================*/
 .about__img {
-  max-width: 280px;
-  border-radius: 101px;
-  margin-top: -88px;
+  max-width: 170px;
+  border-radius: 350px;
   justify-self: center;
   align-self: center;
-  /* border: 1px solid #ffffff; */
+  /* border: 1px solid #fff; */
 }
 
 .about__description {
@@ -433,7 +428,6 @@ img {
 .about__buttons {
   display: flex;
   justify-content: center;
-  margin-left: 100px;
 }
 
 /*===================== SKILLS =========================*/
@@ -755,29 +749,43 @@ img {
 /*================ Contact Me ===============*/
 
 .contact__container {
-  row-gap: 2rem;
+  display: flex;                  /* Membuat elemen berjajar ke samping */
+  flex-wrap: wrap;                /* Responsif jika ruang tidak cukup */
+  justify-content: flex-start;    /* Elemen dimulai dari kiri */
+  gap: 2rem;                      /* Jarak antar elemen */
+  padding: 1rem;
+  align-items: flex-start;        /* Menjaga posisi atas elemen sejajar */
 }
 
 .contact__information {
   display: flex;
-  margin-bottom: var(--mb-2);
+  margin-left: 121px;
+  max-width: 25%;
+  flex-direction: column;
+  align-items: center;             /* Membatasi lebar setiap elemen */
 }
 
 .contact__icon {
-  font-size: 2rem;
-  color: var(--first-color);
-  margin-right: var(--mb-0-75);
+  font-size: 2rem;                /* Ukuran ikon */
+  color: #6c63ff;                 /* Warna ikon */
 }
 
 .contact__title {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
+  text-align: center;
+  margin: 0;
+  font-size: 1.2rem;              /* Ukuran judul */
+  font-weight: bold;
+  color: #333;
 }
 
 .contact__subtitle {
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+  word-wrap: break-word;
+  white-space: nowrap;
 }
+
 .contact__content {
   background-color: var(--input-color);
   border-radius: 0.5rem;
@@ -820,7 +828,7 @@ img {
 }
 
 .footer__subtitle {
-  font-size: var(--small-font-size);
+  font-size: 15px;
 }
 
 .footer__links {
